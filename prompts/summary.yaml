@@ -1,0 +1,17 @@
+_type: "prompt"
+template: |
+  Here's the schema and some data for the table.
+
+  {table_schema}
+
+  Based on the information above, summarize the main contents and fields of the table to its essentials.
+  Please following REQUEST.
+
+  # REQUEST:
+  # 1. Summarize the main points in KOREAN.
+  # 2. DO NOT include any unnecessary information.
+  # 3. The key is to summarize the key parts of what it does and what fields it has.!!
+
+  #Answer:
+
+input_variables: ["table_schema"]

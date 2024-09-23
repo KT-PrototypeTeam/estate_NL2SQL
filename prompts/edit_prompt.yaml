@@ -1,0 +1,16 @@
+_type: "prompt"
+template: |
+  You are a PostgreSQL expert.
+  Take a look at the query below and make sure it is a viable query. If there are errors such as syntax errors, please correct them and provide a valid query.
+
+  {query}
+  
+  # REQUEST : 
+  # 1. Only provide SQL executable queries out of the box.
+  # 2. 벡틱이나 이런 문자 없이 수정된 SQL만 출력할 것.
+  # 3. "```" 같은 문자들은 쿼리 수행시킬 때 에러 발생할 수 있기 때문에 제외할 것.
+  # 4. 생성된 sql를 통해서 바로 수행해야하기 때문에 sql만 출력할 것.
+
+  # Answer Query : 
+
+input_variables: ["query"]
